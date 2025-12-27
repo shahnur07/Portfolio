@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="image/favicon.png" type="image/png" />
+    <script
+      src="https://kit.fontawesome.com/66ba98122d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-links">
+          <li><a onclick="switchView('home')" class="active view-btn">Home</a></li>
+          <li><a onclick="switchView('about')" class="view-btn">About</a></li>
+          <li><a onclick="switchView('work')" class="view-btn">Work</a></li>
+          <li><a onclick="switchView('contact')" class="view-btn">Contact</a></li>
+        </ul>
+        <img src="image/favicon.png" alt="logo" class="logo" />
+      </nav>
+    </header>
+    <main>
+      <div id="home" class="device-screen">
+        <h1 class="header">My Portfolio</h1>
+        <img
+          src="image/myimage.JPG"
+          alt="a picture of me"
+          class="profile-image"
+        />
+
+        <div class="intro-text">
+          <h2>HI, It's <span id="name">Shahnur</span></h2>
+          <h3>I'm a Front end developer</h3>
+          <p>
+            A dedicated web developer with a passion to empower your business in
+            the digital world. I create intuitive designs that connect users.
+          </p>
+          <br />
+          <p id="p2">
+            Feel free to reach out to me if you would like to discuss new
+            opportunities or projects.
+          </p>
+          <a
+            href="https://www.linkedin.com/in/shahnur-islam-143b2b344/"
+            class="profile-link"
+            id="linkedin"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/shahnur07" class="profile-link" id="github">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/shahnur_islam_07/"
+            class="profile-link"
+            id="instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+      <div id="about" class="device-screen">
+        <h2>About Me</h2>
+        <p>
+          I am a passionate web developer with expertise in HTML, CSS,
+          JavaScript, and various web development frameworks. I enjoy creating
+          user-friendly and visually appealing websites that provide an
+          excellent user experience. My goal is to help businesses establish a
+          strong online presence through innovative web solutions.
+        </p>
+        <h4>Skills:</h4>
+        <div class="skills">
+          <br />
+          <div class="skill-item">
+            <dt><i class="fa-brands fa-html5"></i>HTML</dt>
+            <dd>Proficient in creating structured and semantic web pages.</dd>
+          </div>
+          <div class="skill-item">
+            <dt><i class="fa-brands fa-css3-alt"></i>CSS</dt>
+            <dd>
+              Experienced in designing responsive and visually appealing
+              layouts.
+            </dd>
+          </div>
+          <div class="skill-item">
+            <dt><i class="fa-brands fa-js"></i>JavaScript</dt>
+            <dd>
+              Skilled in adding interactivity and dynamic content to web pages.
+            </dd>
+          </div>
+          <div class="skill-item">
+            <dt><i class="fa-brands fa-react"></i>Frameworks</dt>
+            <dd>
+              Familiar with popular frameworks such as React, Angular, and
+              Vue.js.
+            </dd>
+          </div>
+          <div class="skill-item">
+            <dt><i class="fa-brands fa-c"></i>C++</dt>
+            <dd>
+              Knowledgeable in object-oriented programming and data structures.
+            </dd>
+          </div>
+          <div class="skill-item">
+            <dt><i class="fa-brands fa-java"></i>JAVA</dt>
+            <dd>Experienced in building robust applications using Java.</dd>
+          </div>
+          <div class="skill-item">
+            <dt><i class="fa-brands fa-microsoft"></i>C#</dt>
+            <dd>Proficient in developing game in unity engine.</dd>
+          </div>
+          <div class="skill-item">
+            <dt><i class="fa-brands fa-python"></i>PYTHON</dt>
+            <dd>Skilled in scripting and automation tasks using Python.</dd>
+          </div>
+        </div>
+      </div>
+      <div id="work" class="device-screen">
+        <h2>My Works</h2>
+        <p>Here are some of my recent projects and services I offer.</p>
+        <div class="projects">
+          <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>A responsive portfolio website built with HTML, CSS, and JavaScript.</p>
+            <a href="https://github.com/shahnur07/Portfolio" class="project-link">View Project</a>
+          </div>
+          <div class="project">
+            <h3>Edulearn Site</h3>
+            <p>An online course site created with html, Css, JavaScript frontend only.</p>
+            <a href="https://github.com/shahnur07/Edulearn-website/tree/main" class="project-link">View Project</a>
+          </div>
+          <div class="project">
+            <h3>Game Development</h3>
+            <p>Created a pacman game as team project using pygame library of Python.</p>
+            <a href="https://github.com/shahnur07/pacman_game/tree/main" class="project-link">View Project</a>
+          </div>
+        </div>
+        <h4 >Also working on some more projects which will be available in my github.</h4>
+        <a href="https://github.com/shahnur07/"><i class="fab fa-github"></i>shahnur07</a>
+      </div>
+      <div id="contact" class="device-screen">
+        <h2>Contact Me</h2>
+        <p>I'm always open to discussing new opportunities. Feel free to reach out!</p>
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> Email: shahnurislam07@gmail.com</p>
+          <p><i class="fas fa-phone"></i> Phone: +8801518745237</p>
+          <p><i class="fas fa-map-marker-alt"></i> Location: Dhaka, Bangladesh</p>
+        </div>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/emailjs.min.js"></script>
+  </body>
+</html>
