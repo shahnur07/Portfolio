@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website! This is a modern, responsive web portfolio showcasing my skills, projects, and experience as a front-end developer.
 
-![Portfolio Preview](https://via.placeholder.com/800x400?text=Portfolio+Preview) <!-- Replace with actual screenshot -->
+![Portfolio Preview](./image/portfolio_preview.png)
 
 ## 🌟 Features
 
