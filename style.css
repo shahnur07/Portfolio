@@ -519,16 +519,25 @@ div.skills {
   }
   nav {
     padding: 20px 20px;
+    flex-wrap: wrap;
   }
   nav .logo {
-    left: 20px;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    left: 0;
   }
   ul.nav-links {
-    left: 70px;
+    position: relative;
+    left: 0;
+    gap: 0;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 10px;
   }
   nav ul li a {
-    font-size: 16px;
-    padding: 15px 20px;
+    font-size: 14px;
+    padding: 10px 12px;
   }
   .header h1 {
     font-size: 36px;
