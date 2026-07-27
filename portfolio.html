@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Website</title>
+    <title>Shahnur Islam | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="image/favicon.png" type="image/png" />
     <script
@@ -12,151 +12,191 @@
     ></script>
   </head>
   <body>
+
+    <div id="progressBar"></div>
+
     <header>
-      <nav>
+      <nav id="navbar">
+        <a href="#home" class="logo-link">
+          <img src="image/favicon.png" alt="logo" class="logo" onerror="this.src='https://via.placeholder.com/40'" />
+        </a>
+        
+        <!-- Hamburger Menu for Mobile -->
+        <div class="menu-toggle" id="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+
         <ul class="nav-links">
-          <li><a onclick="switchView('home')" class="active view-btn">Home</a></li>
-          <li><a onclick="switchView('about')" class="view-btn">About</a></li>
-          <li><a onclick="switchView('work')" class="view-btn">Work</a></li>
-          <li><a onclick="switchView('contact')" class="view-btn">Contact</a></li>
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
-        <img src="image/favicon.png" alt="logo" class="logo" />
       </nav>
     </header>
-    <main>
-      <div id="home" class="device-screen">
-        <h1 class="header">My Portfolio</h1>
-        <img
-          src="image/myimage.JPG"
-          alt="a picture of me"
-          class="profile-image"
-        />
 
-        <div class="intro-text">
-          <h2>HI, It's <span id="name">Shahnur</span></h2>
-          <h3>I'm a Front end developer</h3>
-          <p>
-            A dedicated web developer with a passion to empower your business in
-            the digital world. I create intuitive designs that connect users.
-          </p>
-          <br />
-          <p id="p2">
-            Feel free to reach out to me if you would like to discuss new
-            opportunities or projects.
-          </p>
-          <a
-            href="https://www.linkedin.com/in/shahnur-islam-143b2b344/"
-            class="profile-link"
-            id="linkedin"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
-          <a href="https://github.com/shahnur07" class="profile-link" id="github">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/shahnur_islam_07/"
-            class="profile-link"
-            id="instagram"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
+    <main>
+      <section id="home" class="device-screen">
+        <div class="hero-content">
+          <img
+            src="image/myimage.JPG"
+            alt="Shahnur Islam"
+            class="profile-image"
+            onerror="this.src='https://via.placeholder.com/230'"
+          />
+          <div class="intro-text">
+            <h2>Hi, It's <span id="name">Shahnur</span></h2>
+            <h3>I'm a Front-end Developer</h3>
+            <p>
+              A dedicated web developer with a passion to empower your business in
+              the digital world. I create intuitive designs that connect users.
+            </p>
+            <p id="p2">
+              Feel free to reach out to me if you would like to discuss new
+              opportunities or projects.
+            </p>
+            
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/shahnur-islam-143b2b344/" target="_blank" class="profile-link" id="linkedin">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/shahnur07" target="_blank" class="profile-link" id="github">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.instagram.com/shahnur_islam_07/" target="_blank" class="profile-link" id="instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://discordapp.com/users/702605580107251754" target="_blank" class="profile-link" id="discord">
+                <i class="fa-brands fa-discord"></i>
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
-      <div id="about" class="device-screen">
+      </section>
+
+      <section id="about" class="device-screen">
         <h2>About Me</h2>
-        <p>
-          I am a passionate web developer with expertise in HTML, CSS,
-          JavaScript, and various web development frameworks. I enjoy creating
-          user-friendly and visually appealing websites that provide an
-          excellent user experience. My goal is to help businesses establish a
-          strong online presence through innovative web solutions.
+        <p class="section-subtitle">
+          I am a passionate front-end developer with a strong foundation in web
+          development. I specialize in creating responsive and user-friendly
+          websites that provide an optimal viewing experience across various
+          devices. My goal is to deliver high-quality solutions that meet client
+          needs and exceed expectations.
         </p>
-        <h4>Skills:</h4>
-        <div class="skills">
-          <br />
+        
+        <h3 class="skills-title">My Skills</h3>
+        <div class="skills-grid">
           <div class="skill-item">
-            <dt><i class="fa-brands fa-html5"></i>HTML</dt>
-            <dd>Proficient in creating structured and semantic web pages.</dd>
+            <h4><i class="fa-brands fa-html5"></i> HTML</h4>
+            <p>Proficient in creating structured and semantic web pages.</p>
           </div>
           <div class="skill-item">
-            <dt><i class="fa-brands fa-css3-alt"></i>CSS</dt>
-            <dd>
-              Experienced in designing responsive and visually appealing
-              layouts.
-            </dd>
+            <h4><i class="fa-brands fa-css3-alt"></i> CSS</h4>
+            <p>Experienced in designing responsive and visually appealing layouts.</p>
           </div>
           <div class="skill-item">
-            <dt><i class="fa-brands fa-js"></i>JavaScript</dt>
-            <dd>
-              Skilled in adding interactivity and dynamic content to web pages.
-            </dd>
+            <h4><i class="fa-brands fa-js"></i> JavaScript</h4>
+            <p>Skilled in adding interactivity and dynamic content to web pages.</p>
           </div>
           <div class="skill-item">
-            <dt><i class="fa-brands fa-react"></i>Frameworks</dt>
-            <dd>
-              Familiar with popular frameworks such as React, Angular, and
-              Vue.js.
-            </dd>
+            <h4><i class="fa-brands fa-react"></i> Frameworks</h4>
+            <p>Familiar with popular frameworks such as React, Angular, and Vue.js.</p>
           </div>
           <div class="skill-item">
-            <dt><i class="fa-brands fa-c"></i>C++</dt>
-            <dd>
-              Knowledgeable in object-oriented programming and data structures.
-            </dd>
+            <h4><i class="fa-brands fa-c"></i> C++</h4>
+            <p>Knowledgeable in object-oriented programming and data structures.</p>
           </div>
           <div class="skill-item">
-            <dt><i class="fa-brands fa-java"></i>JAVA</dt>
-            <dd>Experienced in building robust applications using Java.</dd>
+            <h4><i class="fa-brands fa-java"></i> JAVA</h4>
+            <p>Experienced in building robust applications using Java.</p>
           </div>
           <div class="skill-item">
-            <dt><i class="fa-brands fa-microsoft"></i>C#</dt>
-            <dd>Proficient in developing game in unity engine.</dd>
+            <h4><i class="fa-brands fa-microsoft"></i> C#</h4>
+            <p>Proficient in developing games in the Unity engine.</p>
           </div>
           <div class="skill-item">
-            <dt><i class="fa-brands fa-python"></i>PYTHON</dt>
-            <dd>Skilled in scripting and automation tasks using Python.</dd>
+            <h4><i class="fa-brands fa-python"></i> PYTHON</h4>
+            <p>Skilled in scripting and automation tasks using Python.</p>
+          </div>
+          <div class="skill-item">
+            <h4><i class="fa-solid fa-database"></i> MySQL</h4>
+            <p>Experienced in database management and querying using MySQL.</p>
           </div>
         </div>
-      </div>
-      <div id="work" class="device-screen">
+      </section>
+
+      <section id="work" class="device-screen">
         <h2>My Works</h2>
-        <p>Here are some of my recent projects and services I offer.</p>
+        <p class="section-subtitle">Here are some of my recent projects and services I offer.</p>
+        
         <div class="projects">
           <div class="project">
-            <h3>Portfolio Website</h3>
-            <p>A responsive portfolio website built with HTML, CSS, and JavaScript.</p>
-            <a href="https://github.com/shahnur07/Portfolio" class="project-link">View Project</a>
+            <h3>Game Vault</h3>
+            <p>A responsive game vault website built with React.</p>
+            <a href="https://github.com/shahnur07/game-vault" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
           </div>
           <div class="project">
             <h3>Edulearn Site</h3>
-            <p>An online course site created with html, Css, JavaScript frontend only.</p>
-            <a href="https://github.com/shahnur07/Edulearn-website/tree/main" class="project-link">View Project</a>
+            <p>An online course site created with HTML, CSS, JavaScript frontend only.</p>
+            <a href="https://github.com/shahnur07/Edulearn-website/tree/main" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
           </div>
           <div class="project">
             <h3>Game Development</h3>
-            <p>Created a pacman game as team project using pygame library of Python.</p>
-            <a href="https://github.com/shahnur07/pacman_game/tree/main" class="project-link">View Project</a>
+            <p>Created a Pacman game as a team project using the Pygame library of Python.</p>
+            <a href="https://github.com/shahnur07/pacman_game/tree/main" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
-        <h4 >Also working on some more projects which will be available in my github.</h4>
-        <a href="https://github.com/shahnur07/"><i class="fab fa-github"></i>shahnur07</a>
-      </div>
-      <div id="contact" class="device-screen">
-        <h2>Contact Me</h2>
-        <p>I'm always open to discussing new opportunities. Feel free to reach out!</p>
-        <div class="contact-info">
-          <p><i class="fas fa-envelope"></i> Email: shahnurislam07@gmail.com</p>
-          <p><i class="fas fa-phone"></i> Phone: +8801518745237</p>
-          <p><i class="fas fa-map-marker-alt"></i> Location: Dhaka, Bangladesh</p>
+        
+        <div class="more-projects">
+          <h4>Working on more projects which will be available on my GitHub.</h4>
+          <a href="https://github.com/shahnur07/" target="_blank" class="github-btn">
+            <i class="fab fa-github"></i> Follow @shahnur07
+          </a>
         </div>
-        <form class="contact-form">
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Your Email" required>
-          <textarea placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
+      </section>
+
+      <section id="contact" class="device-screen">
+        <h2>Contact Me</h2>
+        <p class="section-subtitle">I'm always open to discussing new opportunities. Feel free to reach out!</p>
+        
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="info-card">
+              <i class="fas fa-envelope"></i>
+              <p>shahnurislam07@gmail.com</p>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-phone"></i>
+              <p>+880 151 874 5237</p>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Dhaka, Bangladesh</p>
+            </div>
+          </div>
+          
+          <!-- Direct Email Form using FormSubmit -->
+          <form class="contact-form" id="contactForm" action="https://formsubmit.co/shahnurislam07@gmail.com" method="POST">
+            <!-- Hidden inputs to configure FormSubmit -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="New Portfolio Message!">
+            <input type="hidden" name="_template" value="table">
+            
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            
+            <button type="submit" id="submitBtn">
+              <span>Send Message</span> <i class="fas fa-paper-plane"></i>
+            </button>
+            <p id="formStatus"></p>
+          </form>
+        </div>
+      </section>
     </main>
+    
+    <button id="backToTop" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/emailjs.min.js"></script>
   </body>
 </html>
